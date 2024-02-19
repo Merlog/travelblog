@@ -1,0 +1,94 @@
+.post {
+  background-color: white;
+  /* zjistit jestli jsou potreba prefixy*/
+  -webkit-box-shadow: 10px 5px 15px 0px rgba(194, 194, 194, 1);
+  -moz-box-shadow: 10px 5px 15px 0px rgba(194, 194, 194, 1);
+  box-shadow: 10px 5px 15px 0px rgba(194, 194, 194, 1);
+  border-radius: 20px;
+  overflow: hidden;
+  text-decoration: none;
+  transition: all 0.1s ease-in-out;
+  position: relative;
+}
+
+.post:hover {
+  -webkit-box-shadow: 5px 5px 10px 0px rgb(174, 174, 174);
+  -moz-box-shadow: 5px 5px 10px 0px rgba(174, 174, 174, 1);
+  box-shadow: 5px 5px 10px 0px rgba(174, 174, 174, 1);
+}
+
+.link {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
+
+.link:hover {
+  cursor: pointer;
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.image {
+  object-fit: cover;
+}
+
+.content {
+  padding: 0px 20px 10px;
+}
+
+.date {
+  display: block;
+  font-size: 14px;
+  color: rgb(90, 90, 90);
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+.location {
+  font-size: 14px;
+  color: rgb(90, 90, 90);
+  margin-bottom: 12px;
+}
+
+.country,
+.region {
+  display: inline-block;
+  font-size: 14px;
+  background-color: #07555c;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 5px;
+}
+
+.country {
+  background-color: #0a7a84;
+  margin-right: 10px;
+}
+
+.title {
+  font-size: 20px;
+  margin: 0 0 10px;
+}
+
+.perex {
+  position: relative;
+  height: 125px;
+  overflow: hidden;
+}
+
+.perex::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 20px;
+  bottom: -10px;
+  box-shadow: 0px -20px 20px 0px rgba(255, 255, 255, 0.8) inset;
+}
